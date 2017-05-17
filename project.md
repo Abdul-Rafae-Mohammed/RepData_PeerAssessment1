@@ -42,11 +42,7 @@ Calculating the Mean and Median of Total Number of Steps Taken per Day
 
 #### The Mean of Number of Steps is : `1.0766189\times 10^{4}`
 
-#### The Mean of Number of Steps is : 1.076618910^{4}
-
 #### The Median of Number of Steps is : `10765`
-
-#### The Median of Number of Steps is : 10765
 
 Task-3
 ======
@@ -70,8 +66,6 @@ Calculate the Interval with the maximum steps
 
 #### The interval with maximum number of steps is : `835`
 
-#### The interval with maximum number of steps is : 835
-
 Task-4
 ------
 
@@ -83,8 +77,6 @@ Impute Missing Values
     na_count <- length(which(is.na(activity$steps)))
 
 #### The Number of NA values are : `2304`
-
-#### The Number of NA values are : 2304
 
 ### Fill in NA Values
 
@@ -110,11 +102,7 @@ Impute Missing Values
 
 #### The Mean of Number of Steps is : `1.0766189\times 10^{4}`
 
-#### The Mean of Number of Steps is : 1.076618910^{4}
-
 #### The Median of Number of Steps is : `1.0766189\times 10^{4}`
-
-#### The Median of Number of Steps is : 1.076618910^{4}
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
 
@@ -123,19 +111,13 @@ Impute Missing Values
 
 #### The Difference between the Means of Number of Steps is : `0`
 
-#### The Difference between the Means of Number of Steps is : 0
-
 #### The Difference between the Median of Number of Steps is : `1.1886792`
-
-#### The Difference between the Median of Number of Steps is : 1.1886792
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
 
     total_diff_steps <- sum(total_steps_per_day_imputed$steps) - sum(steps_per_day$steps)
 
 #### The Difference between the Number of Steps of imputed and non-imputed data is : `8.6129509\times 10^{4}`
-
-#### The Difference between the Number of Steps of imputed and non-imputed data is : 8.612950910^{4}
 
 Task-5
 ------

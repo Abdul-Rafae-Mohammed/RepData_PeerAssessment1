@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research Project 1"
-author: "AbdulRafaeMohammed"
+author: "Abdul Rafae Mohammed"
 date: "May 16, 2017"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
@@ -48,9 +48,7 @@ Median_steps <- median(steps_per_day$steps)
 ```
 
 #### The Mean of Number of Steps is : ```r Mean_Steps``` 
-#### The Mean of Number of Steps is : 1.0766189\times 10^{4}
 #### The Median of Number of Steps is : ```r Median_steps```
-#### The Median of Number of Steps is : 10765
 
 
 #Task-3
@@ -72,7 +70,6 @@ interval_for_max_steps <- avg_steps_per_day[which.max(avg_steps_per_day$steps),1
 ```
 
 #### The interval with maximum number of steps is : ```r interval_for_max_steps```
-#### The interval with maximum number of steps is : 835
 
 ##Task-4
 ## Impute Missing Values
@@ -84,7 +81,6 @@ na_count <- length(which(is.na(activity$steps)))
 ```
 
 #### The Number of NA values are : ```r na_count```
-#### The Number of NA values are : 2304
 
 ### Fill in NA Values
 
@@ -114,9 +110,7 @@ Median_imputed_steps <- median(total_steps_per_day_imputed$steps)
 ```
 
 #### The Mean of Number of Steps is : ```r Mean_imputed_Steps```
-#### The Mean of Number of Steps is : 1.0766189\times 10^{4}
 #### The Median of Number of Steps is : ```r Median_imputed_steps```
-#### The Median of Number of Steps is : 1.0766189\times 10^{4}
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
 
@@ -127,9 +121,7 @@ diff_median <- Median_imputed_steps - Median_steps
 
 
 #### The Difference between the Means of Number of Steps is : ```r diff_mean```
-#### The Difference between the Means of Number of Steps is : 0
 #### The Difference between the Median of Number of Steps is : ```r diff_median```
-#### The Difference between the Median of Number of Steps is : 1.1886792
 
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
@@ -139,7 +131,6 @@ total_diff_steps <- sum(total_steps_per_day_imputed$steps) - sum(steps_per_day$s
 ```
 
 #### The Difference between the Number of Steps of imputed and non-imputed data is : ```r total_diff_steps```
-#### The Difference between the Number of Steps of imputed and non-imputed data is : 8.6129509\times 10^{4}
 
 ## Task-5
 
