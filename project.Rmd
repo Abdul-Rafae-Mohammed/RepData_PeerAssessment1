@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Reproducible Research Project 1"
 author: "AbdulRafaeMohammed"
 date: "May 16, 2017"
 output: html_document
@@ -47,8 +47,8 @@ Mean_Steps <- mean(steps_per_day$steps)
 Median_steps <- median(steps_per_day$steps)
 ```
 
-#### The Mean of Number of Steps is : `r Mean_Steps`
-#### The Median of Number of Steps is : `r Median_steps`
+#### The Mean of Number of Steps is : ```r Mean_Steps```
+#### The Median of Number of Steps is : ```r Median_steps```
 
 #Task-3
 ## Calculate the average activity pattern each day.
@@ -68,7 +68,7 @@ plot(avg_steps_per_day$interval, avg_steps_per_day$steps, type ='l',main = "Aver
 interval_for_max_steps <- avg_steps_per_day[which.max(avg_steps_per_day$steps),1]
 ```
 
-#### The interval with maximum number of steps is : `r interval_for_max_steps`
+#### The interval with maximum number of steps is : ```r interval_for_max_steps```
 
 ##Task-4
 ## Impute Missing Values
@@ -79,7 +79,7 @@ interval_for_max_steps <- avg_steps_per_day[which.max(avg_steps_per_day$steps),1
 na_count <- length(which(is.na(activity$steps)))
 ```
 
-#### The Number of NA values are : `r na_count`
+#### The Number of NA values are : ```r na_count```
 
 ### Fill in NA Values
 
@@ -108,8 +108,8 @@ Mean_imputed_Steps <- mean(total_steps_per_day_imputed$steps)
 Median_imputed_steps <- median(total_steps_per_day_imputed$steps)
 ```
 
-#### The Mean of Number of Steps is : `r Mean_imputed_Steps`
-#### The Median of Number of Steps is : `r Median_imputed_steps`
+#### The Mean of Number of Steps is : ```r Mean_imputed_Steps```
+#### The Median of Number of Steps is : ```r Median_imputed_steps```
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
 
@@ -119,8 +119,8 @@ diff_median <- Median_imputed_steps - Median_steps
 ```
 
 
-#### The Difference between the Means of Number of Steps is : `r diff_mean`
-#### The Difference between the Median of Number of Steps is : `r diff_median`
+#### The Difference between the Means of Number of Steps is : ```r diff_mean```
+#### The Difference between the Median of Number of Steps is : ```r diff_median```
 
 
 ### Calculate the Diff between the Imputed and Non-Imputed Data
@@ -129,7 +129,7 @@ diff_median <- Median_imputed_steps - Median_steps
 total_diff_steps <- sum(total_steps_per_day_imputed$steps) - sum(steps_per_day$steps)
 ```
 
-#### The Difference between the Number of Steps of imputed and non-imputed data is : `r total_diff_steps`
+#### The Difference between the Number of Steps of imputed and non-imputed data is : ```r total_diff_steps```
 
 ## Task-5
 
